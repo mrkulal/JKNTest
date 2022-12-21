@@ -21,12 +21,56 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>3.0.0-M7</version>
           <configuration>
-          <suiteXmlFiles>testngJKN.xml</suiteXmlFiles>
+          <suiteXmlFiles>testngHOME.xml</suiteXmlFiles>
           </configuration>
         </plugin>
       </plugins>
       </build>
        </profile>
+          
+          <profile>
+ <id>sanity</id>
+ 
+  <build>
+   
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.0.0-M7</version>
+          <configuration>
+          <suiteXmlFiles>testngPHOTO.xml</suiteXmlFiles>
+          </configuration>
+        </plugin>
+      </plugins>
+      </build>
+       </profile>
+       
+       
+       
+       <profile>
+ <id>regression</id>
+ 
+  <build>
+   
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.0.0-M7</version>
+          <configuration>
+          <suiteXmlFiles>testngUSER.xml</suiteXmlFiles>
+          </configuration>
+        </plugin>
+      </plugins>
+      </build>
+       </profile>
+       
+       
+       
+       
+       
+       
        </profiles>
    
   <dependencies> 
