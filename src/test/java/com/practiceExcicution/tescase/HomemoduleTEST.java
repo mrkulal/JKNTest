@@ -5,7 +5,8 @@ import org.testng.annotations.Test;
 public class HomemoduleTEST {
 @Test(groups="smoke")
 public void test1() {
-	System.out.println("smoke from home");
+	System.out.println("smoke is from home");
+	System.out.println("smoke from to from home");
 	
 }
 @Test(groups="sanity")
